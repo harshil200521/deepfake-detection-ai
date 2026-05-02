@@ -89,7 +89,7 @@ def get_mermaid_url(code):
     b64_str = b64_str.replace("+", "-").replace("/", "_")
     return f"https://mermaid.ink/img/{b64_str}"
 
-output_dir = "/Users/anand/Desktop/deepfake-detection-ai"
+output_dir = "/Users/Harshil/Desktop/deepfake-detection-ai"
 for filename, code in diagrams.items():
     print(f"Downloading {filename}...")
     url = get_mermaid_url(code)
