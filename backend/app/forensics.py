@@ -7,15 +7,18 @@ import torch.nn as nn
 from torchvision import transforms
 from PIL import Image
 import difflib
-import google.generativeai as genai
+from google import genai
+import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(base_dir, '.env')
+load_dotenv(dotenv_path)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+gemini_client = None
 if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
-client = GEMINI_API_KEY is not None
+    gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+client = gemini_client is not None
 
 class DeepfakeCNN(nn.Module):
     def __init__(self):
@@ -92,8 +95,10 @@ Flags options: sensationalist_language, unverified_claims, scam_pattern, ai_gene
 
         if not client:
             raise RuntimeError("Gemini client unavailable: missing API key")
-        model = genai.GenerativeModel('gemini-1.5-flash')
-        response = model.generate_content(prompt)
+        response = gemini_client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+        )
         raw = response.text.strip().replace("```json", "").replace("```", "").strip()
         data = json.loads(raw)
         return {
@@ -103,8 +108,9 @@ Flags options: sensationalist_language, unverified_claims, scam_pattern, ai_gene
             "flags": data.get("flags", [])
         }
     except Exception as e:
-        print(f"Gemini Error: {e}")
-        return {"result":"UNVERIFIED","confidence":50,"reasoning":"AI unavailable.","flags":[]}
+        error_msg = str(e)
+        print(f"Gemini Error: {error_msg}", flush=True)
+        return {"result":"UNVERIFIED","confidence":50,"reasoning":f"AI Error: {error_msg}","flags":[]}
 
 # Initialize on import
 load_models()
