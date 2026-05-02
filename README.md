@@ -88,7 +88,7 @@ The landing page now includes:
 
 ## ⚡ Product Highlights
 
-- **97% detection accuracy** presentation on landing UI
+- **85% detection accuracy** presentation on landing UI
 - **Real-time neural analysis** experience
 - **Multi-layer forensic scoring**
 - **Deepfake, fake news, URL, and media verification**
