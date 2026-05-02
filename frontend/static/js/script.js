@@ -505,7 +505,7 @@ $(document).ready(function () {
 
             const isFake = (data.result === 'FAKE');
             let backendConfidence = parseFloat(data.confidence) || 0;
-            let truthScore = isFake ? (100 - backendConfidence) : backendConfidence;
+            let truthScore = backendConfidence;
             truthScore = Math.max(2, Math.min(98, truthScore));
 
             let explanation = {
@@ -538,7 +538,7 @@ $(document).ready(function () {
             if (data.result === 'Error') { alert(data.message); resetProcess(); return; }
 
             let backendConfidence = parseFloat(data.confidence) || 0;
-            let truthScore = data.result === 'FAKE' ? Math.max(2, Math.min(98, 100 - backendConfidence)) : Math.max(2, Math.min(98, backendConfidence));
+            let truthScore = Math.max(2, Math.min(98, backendConfidence));
 
             const explanation = {
                 summary: data.summary || 'Web source analysis complete.',
