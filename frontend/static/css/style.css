@@ -1,20 +1,20 @@
 :root {
     /* Dark Mode (Default) Tokens */
-    --bg-primary: #0a0f0a;
-    --bg-secondary: #0d1a0d;
-    --bg-card: #111a11;
-    --text-primary: #e0ffe0;
-    --text-secondary: #7aab7a;
-    --accent: #00ff88;
-    --accent-secondary: #24d53a;
-    --accent-dim: #071d0d;
-    --accent-soft: #84ff82;
-    --border: #1a3a1a;
-    --glass-bg: rgba(13, 26, 13, 0.72);
-    --glass-border: rgba(0, 255, 136, 0.22);
+    --bg-primary: #0B132B;
+    --bg-secondary: #121E3B;
+    --bg-card: #18264A;
+    --text-primary: #E0F7FA;
+    --text-secondary: #90A4AE;
+    --accent: #00F3FF;
+    --accent-secondary: #48CAE4;
+    --accent-dim: #051A30;
+    --accent-soft: #8DE4FF;
+    --border: #22355B;
+    --glass-bg: rgba(18, 30, 59, 0.72);
+    --glass-border: rgba(0, 243, 255, 0.22);
     
-    --neon-green: #00ff88;
-    --neon-red: #ff3b3b;
+    --neon-green: #00F3FF;
+    --neon-red: #FF5400;
     --font-head: 'Orbitron', sans-serif;
     --font-body: 'Space Grotesk', sans-serif;
 
@@ -186,19 +186,19 @@ body {
 
 .auth-nav-btn {
     border-color: rgba(255, 255, 255, 0.18);
-    color: #d7ffe1;
-    background: linear-gradient(180deg, rgba(0, 255, 65, 0.08), rgba(0, 255, 65, 0.02));
-    box-shadow: inset 0 0 18px rgba(0, 255, 65, 0.06);
+    color: #e0f7fa;
+    background: linear-gradient(180deg, rgba(0, 243, 255, 0.08), rgba(0, 243, 255, 0.02));
+    box-shadow: inset 0 0 18px rgba(0, 243, 255, 0.06);
 }
 
 .auth-nav-btn:hover {
-    background: linear-gradient(180deg, rgba(0, 255, 65, 0.18), rgba(0, 255, 65, 0.06));
-    box-shadow: 0 0 24px rgba(0, 255, 65, 0.22);
+    background: linear-gradient(180deg, rgba(0, 243, 255, 0.18), rgba(0, 243, 255, 0.06));
+    box-shadow: 0 0 24px rgba(0, 243, 255, 0.22);
 }
 
 .auth-nav-primary {
-    border-color: rgba(0, 255, 65, 0.5);
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.12), inset 0 0 16px rgba(0, 255, 65, 0.08);
+    border-color: rgba(0, 243, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.12), inset 0 0 16px rgba(0, 243, 255, 0.08);
 }
 
 .status-pill {
@@ -366,8 +366,8 @@ body {
 
 
 @keyframes breathingGlow {
-    from { text-shadow: 0 0 8px rgba(0,255,136,0.3), 0 0 16px rgba(0,255,136,0.1); }
-    to { text-shadow: 0 0 16px rgba(0,255,136,0.6), 0 0 32px rgba(0,255,136,0.2); }
+    from { text-shadow: 0 0 8px rgba(0,243,255,0.3), 0 0 16px rgba(0,243,255,0.1); }
+    to { text-shadow: 0 0 16px rgba(0,243,255,0.6), 0 0 32px rgba(0,243,255,0.2); }
 }
 
 @keyframes glitch1 {
@@ -700,14 +700,14 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.2), transparent);
     transition: 0.5s;
     z-index: -1;
 }
 
 .cyber-btn:hover {
-    background: rgba(0, 255, 65, 0.1);
-    box-shadow: 0 0 25px rgba(143, 255, 209, 0.18), inset 0 0 10px rgba(143, 255, 209, 0.12);
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 25px rgba(143, 243, 255, 0.18), inset 0 0 10px rgba(143, 243, 255, 0.12);
     transform: translateY(-2px);
     color: #fff;
 }
@@ -720,17 +720,17 @@ body {
     padding: 20px 50px;
     font-size: 1.2rem;
     border-width: 2px;
-    background: rgba(0, 255, 65, 0.05);
+    background: rgba(0, 243, 255, 0.05);
 }
 
 .cyber-btn.secondary {
-    border-color: rgba(0, 255, 65, 0.5);
-    color: rgba(0, 255, 65, 0.95);
-    background: rgba(0, 255, 65, 0.08);
+    border-color: rgba(0, 243, 255, 0.5);
+    color: rgba(0, 243, 255, 0.95);
+    background: rgba(0, 243, 255, 0.08);
 }
 
 .cyber-btn.secondary:hover {
-    background: rgba(0, 255, 65, 0.16);
+    background: rgba(0, 243, 255, 0.16);
 }
 
 .landing-cta {
@@ -751,7 +751,7 @@ body {
 
 .auth-tab {
     padding: 12px 24px;
-    border: 1px solid rgba(0, 255, 65, 0.18);
+    border: 1px solid rgba(0, 243, 255, 0.18);
     border-radius: 999px;
     background: rgba(0, 0, 0, 0.55);
     color: var(--accent);
@@ -763,9 +763,9 @@ body {
 }
 
 .auth-tab.active {
-    background: rgba(0, 255, 65, 0.14);
+    background: rgba(0, 243, 255, 0.14);
     border-color: var(--accent);
-    box-shadow: 0 0 18px rgba(0, 255, 65, 0.18);
+    box-shadow: 0 0 18px rgba(0, 243, 255, 0.18);
 }
 
 .footer-note {
@@ -785,7 +785,7 @@ body {
     font-size: 0.58rem;
     letter-spacing: 3px;
     text-transform: lowercase;
-    color: rgba(0, 255, 65, 0.55);
+    color: rgba(0, 243, 255, 0.55);
 }
 
 @keyframes slideUpFade {
@@ -950,7 +950,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 50%, rgba(0, 255, 65, 0.02) 50%);
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 243, 255, 0.02) 50%);
     background-size: 100% 4px;
     pointer-events: none;
     animation: scanline-move 8s linear infinite;
@@ -1042,7 +1042,7 @@ textarea {
 
 
 textarea::placeholder {
-    color: rgba(0, 255, 65, 0.3);
+    color: rgba(0, 243, 255, 0.3);
 }
 
 /* Blinking cursor effect */
@@ -1069,7 +1069,7 @@ textarea::placeholder {
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgba(0, 255, 65, 0.3);
+    background: rgba(0, 243, 255, 0.3);
     animation: scan 3s linear infinite;
     pointer-events: none;
 }
@@ -1117,7 +1117,7 @@ textarea::placeholder {
 }
 
 .sample-btn:hover {
-    background: rgba(0, 255, 65, 0.1);
+    background: rgba(0, 243, 255, 0.1);
     border-color: var(--accent);
     color: var(--accent);
 }
@@ -1207,7 +1207,7 @@ textarea::placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, transparent 50%, rgba(0, 255, 65, 0.2) 50%, transparent 51%);
+    background: linear-gradient(180deg, transparent 50%, rgba(0, 243, 255, 0.2) 50%, transparent 51%);
     background-size: 100% 10px;
     animation: scanning 1s linear infinite;
     pointer-events: none;
@@ -1434,7 +1434,7 @@ textarea::placeholder {
     font-family: var(--font-head);
     font-size: 1rem;
     color: #fff;
-    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
 }
 
 .score-label {
@@ -1474,11 +1474,11 @@ textarea::placeholder {
 
 .analysis-details {
     margin-top: 20px;
-    background: rgba(0, 255, 65, 0.03);
+    background: rgba(0, 243, 255, 0.03);
     padding: 25px;
     border-radius: 12px;
     border-left: 4px solid var(--accent);
-    box-shadow: inset 0 0 15px rgba(0, 255, 65, 0.05);
+    box-shadow: inset 0 0 15px rgba(0, 243, 255, 0.05);
     transform-origin: top;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1545,7 +1545,7 @@ textarea::placeholder {
     width: 100%;
     height: 40px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 255, 65, 0.2);
+    border: 1px solid rgba(0, 243, 255, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -1632,8 +1632,8 @@ textarea::placeholder {
 .back-btn:hover {
     color: var(--accent);
     border-color: var(--accent);
-    background: rgba(0, 255, 65, 0.1);
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
     transform: translateX(-5px);
 }
 
@@ -1656,7 +1656,7 @@ textarea::placeholder {
     align-items: center;
     padding: 100px 20px;
     z-index: 2;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 65, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.05) 0%, transparent 70%);
 }
 
 .hero-section {
@@ -1693,7 +1693,7 @@ textarea::placeholder {
     content: '';
     position: absolute;
     inset: 16px;
-    border: 1px solid rgba(0, 255, 65, 0.08);
+    border: 1px solid rgba(0, 243, 255, 0.08);
     border-radius: 24px;
     pointer-events: none;
 }
@@ -1704,7 +1704,7 @@ textarea::placeholder {
     inset: -20% auto auto 58%;
     width: 520px;
     height: 520px;
-    background: radial-gradient(circle, rgba(0, 255, 65, 0.18), transparent 62%);
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.18), transparent 62%);
     filter: blur(40px);
     opacity: 0.7;
     pointer-events: none;
@@ -1722,8 +1722,8 @@ textarea::placeholder {
 .intel-chip {
     padding: 10px 16px;
     border-radius: 999px;
-    border: 1px solid rgba(0, 255, 65, 0.14);
-    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid rgba(0, 243, 255, 0.14);
+    background: rgba(0, 243, 255, 0.05);
     color: rgba(218, 255, 227, 0.82);
     font-family: var(--font-head);
     font-size: 0.68rem;
@@ -1737,7 +1737,7 @@ textarea::placeholder {
     bottom: 72px;
     height: 18px;
     border-radius: 999px;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.18), rgba(0, 255, 65, 0.5), rgba(0, 255, 65, 0.18), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.18), rgba(0, 243, 255, 0.5), rgba(0, 243, 255, 0.18), transparent);
     filter: blur(10px);
     opacity: 0.9;
     pointer-events: none;
@@ -1770,10 +1770,10 @@ textarea::placeholder {
 
 .auth-panel {
     background: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(0, 255, 65, 0.22);
+    border: 1px solid rgba(0, 243, 255, 0.22);
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0 0 40px rgba(0, 255, 65, 0.12);
+    box-shadow: 0 0 40px rgba(0, 243, 255, 0.12);
 }
 
 .auth-panel h2 {
@@ -1789,13 +1789,13 @@ textarea::placeholder {
     margin-bottom: 18px;
     font-family: 'Courier New', monospace;
     background: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(0, 255, 65, 0.18);
+    border: 1px solid rgba(0, 243, 255, 0.18);
     border-radius: 12px;
     color: var(--accent);
 }
 
 .auth-panel input::placeholder {
-    color: rgba(0, 255, 65, 0.4);
+    color: rgba(0, 243, 255, 0.4);
 }
 
 .auth-panel button {
@@ -1817,7 +1817,7 @@ textarea::placeholder {
     width: 100%;
     max-width: 900px;
     background: linear-gradient(180deg, rgba(10, 17, 22, 0.92), rgba(7, 11, 15, 0.88));
-    border: 1px solid rgba(143, 255, 209, 0.12);
+    border: 1px solid rgba(143, 243, 255, 0.12);
     border-radius: 24px;
     backdrop-filter: blur(25px);
     box-shadow: 0 26px 60px rgba(0, 0, 0, 0.38);
@@ -1828,7 +1828,7 @@ textarea::placeholder {
 
 .dedicated-box.text-theme {
     border-color: var(--accent);
-    box-shadow: 0 0 50px rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 50px rgba(0, 243, 255, 0.1);
 }
 
 .dedicated-box.media-theme {
@@ -1988,7 +1988,7 @@ body,
 .metric-block {
     background: rgba(0, 20, 0, 0.3);
     padding: 15px;
-    border: 1px solid rgba(0, 255, 65, 0.05);
+    border: 1px solid rgba(0, 243, 255, 0.05);
     position: relative;
 }
 
@@ -2048,9 +2048,9 @@ body,
 
 /* Forensic Audit Style for Details */
 .analysis-details li {
-    background: rgba(0, 255, 65, 0.02);
+    background: rgba(0, 243, 255, 0.02);
     padding: 8px;
-    border-bottom: 1px solid rgba(0, 255, 65, 0.05);
+    border-bottom: 1px solid rgba(0, 243, 255, 0.05);
 }
 
 .analysis-details li:last-child {
@@ -2064,8 +2064,8 @@ body,
     width: 100%;
     height: 100%;
     background-image:
-        linear-gradient(rgba(0, 255, 65, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 65, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(0, 243, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 243, 255, 0.02) 1px, transparent 1px);
     background-size: 80px 80px;
     z-index: -1;
     pointer-events: none;
@@ -2207,7 +2207,7 @@ body,
     max-width: 900px;
     padding: 18px 20px;
     border-radius: 14px;
-    border: 1px solid rgba(0, 255, 65, 0.18);
+    border: 1px solid rgba(0, 243, 255, 0.18);
     background: rgba(0, 0, 0, 0.65);
     color: var(--accent);
     font-family: 'Courier New', monospace;
@@ -2219,10 +2219,10 @@ body,
     width: 100%;
     max-width: 1000px;
     background: rgba(0, 10, 0, 0.85);
-    border: 1px solid rgba(0, 255, 65, 0.18);
+    border: 1px solid rgba(0, 243, 255, 0.18);
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 0 40px rgba(0, 255, 65, 0.08);
+    box-shadow: 0 0 40px rgba(0, 243, 255, 0.08);
 }
 
 .history-actions {
@@ -2245,7 +2245,7 @@ body,
     min-width: 160px;
     padding: 12px 14px;
     border-radius: 12px;
-    border: 1px solid rgba(0, 255, 65, 0.16);
+    border: 1px solid rgba(0, 243, 255, 0.16);
     background: rgba(0, 0, 0, 0.55);
     color: var(--accent);
     font-family: var(--font-head);
@@ -2258,12 +2258,12 @@ body,
 }
 
 .history-control::placeholder {
-    color: rgba(0, 255, 65, 0.42);
+    color: rgba(0, 243, 255, 0.42);
 }
 
 .history-control:focus {
-    border-color: rgba(0, 255, 65, 0.4);
-    box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.08);
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow: 0 0 0 3px rgba(0, 243, 255, 0.08);
 }
 
 .history-report-link {
@@ -2272,19 +2272,19 @@ body,
     justify-content: center;
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(0, 255, 65, 0.2);
+    border: 1px solid rgba(0, 243, 255, 0.2);
     color: var(--accent);
     text-decoration: none;
     font-family: var(--font-head);
     font-size: 0.7rem;
     letter-spacing: 1px;
-    background: rgba(0, 255, 65, 0.05);
+    background: rgba(0, 243, 255, 0.05);
     transition: all 0.2s ease;
 }
 
 .history-report-link:hover {
-    background: rgba(0, 255, 65, 0.14);
-    border-color: rgba(0, 255, 65, 0.3);
+    background: rgba(0, 243, 255, 0.14);
+    border-color: rgba(0, 243, 255, 0.3);
     color: #fff;
 }
 
@@ -2305,7 +2305,7 @@ body,
 #historyTable th,
 #historyTable td {
     padding: 14px 18px;
-    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+    border-bottom: 1px solid rgba(0, 243, 255, 0.08);
     font-family: var(--font-body);
     font-size: 0.85rem;
     color: var(--text-secondary);
@@ -2320,7 +2320,7 @@ body,
 }
 
 #historyTable tr:hover {
-    background: rgba(0, 255, 65, 0.05);
+    background: rgba(0, 243, 255, 0.05);
 }
 
 #historyTable td {
@@ -2434,7 +2434,7 @@ body,
     letter-spacing: 8px;
     line-height: 0.95;
     color: #e8ffce;
-    text-shadow: 0 0 10px var(--accent), 0 0 20px rgba(0, 255, 136, 0.27);
+    text-shadow: 0 0 10px var(--accent), 0 0 20px rgba(0, 243, 255, 0.27);
 }
 
 
@@ -2545,7 +2545,7 @@ body,
 
 .text-entry .scan-icon {
     color: var(--accent);
-    background: rgba(143, 255, 209, 0.08);
+    background: rgba(143, 243, 255, 0.08);
 }
 
 .url-entry .scan-icon {
@@ -2595,9 +2595,9 @@ body,
     flex-direction: column;
     gap: 8px;
     padding: 18px;
-    border: 1px solid rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.08);
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(143, 255, 209, 0.02));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(143, 243, 255, 0.02));
 }
 
 .stat-value {
@@ -2619,7 +2619,7 @@ body,
     flex-direction: column;
     gap: 18px;
     padding: 26px;
-    border: 1px solid rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.08);
     border-radius: 30px;
     background:
         linear-gradient(180deg, rgba(14, 20, 24, 0.98), rgba(7, 10, 14, 0.94));
@@ -2635,8 +2635,8 @@ body,
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(rgba(143, 255, 209, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(143, 255, 209, 0.025) 1px, transparent 1px);
+        linear-gradient(rgba(143, 243, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(143, 243, 255, 0.025) 1px, transparent 1px);
     background-size: 22px 22px;
     opacity: 0.32;
     pointer-events: none;
@@ -2706,7 +2706,7 @@ body,
     inset: 18px;
     border-radius: 50%;
     background: rgba(3, 8, 8, 0.96);
-    border: 1px solid rgba(0, 255, 65, 0.12);
+    border: 1px solid rgba(0, 243, 255, 0.12);
 }
 
 .score-number,
@@ -2762,7 +2762,7 @@ body,
 .telemetry-readout div {
     padding: 12px 14px;
     border-radius: 14px;
-    border: 1px solid rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.08);
     background: rgba(255, 255, 255, 0.03);
 }
 
@@ -2782,7 +2782,7 @@ body,
 
 .landing-section {
     padding: 32px;
-    border: 1px solid rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.08);
     border-radius: 28px;
     background: linear-gradient(180deg, rgba(10, 15, 18, 0.9), rgba(6, 9, 12, 0.8));
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 16px 44px rgba(0, 0, 0, 0.18);
@@ -2821,7 +2821,7 @@ body,
 .workflow-step {
     padding: 24px;
     border-radius: 22px;
-    border: 1px solid rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.08);
     background:
         radial-gradient(circle at top right, rgba(255, 255, 255, 0.05), transparent 36%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(160, 255, 204, 0.02));
@@ -2844,8 +2844,8 @@ body,
     justify-content: center;
     margin-bottom: 16px;
     border-radius: 12px;
-    border: 1px solid rgba(143, 255, 209, 0.14);
-    background: rgba(143, 255, 209, 0.08);
+    border: 1px solid rgba(143, 243, 255, 0.14);
+    background: rgba(143, 243, 255, 0.08);
     color: var(--accent);
     font-family: var(--font-head);
     font-size: 0.85rem;
@@ -2880,8 +2880,8 @@ body,
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: rgba(143, 255, 209, 0.72);
-    box-shadow: 0 0 14px rgba(143, 255, 209, 0.55);
+    background: rgba(143, 243, 255, 0.72);
+    box-shadow: 0 0 14px rgba(143, 243, 255, 0.55);
     opacity: 0.6;
     animation: particleFloat 12s ease-in-out infinite;
 }

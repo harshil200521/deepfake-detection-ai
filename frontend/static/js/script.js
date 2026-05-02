@@ -249,7 +249,7 @@ $(document).ready(function () {
         ctx.fillRect(0, 0, width, height);
 
         ctx.font = `bold ${charSize - 3}px monospace`;
-        ctx.shadowColor = 'rgba(57, 255, 20, 0.35)';
+        ctx.shadowColor = 'rgba(0, 243, 255, 0.35)';
         ctx.shadowBlur = 12;
         ctx.textBaseline = 'top';
 
@@ -258,12 +258,12 @@ $(document).ready(function () {
             const x = ind * charSize;
             const intensity = Math.floor(Math.random() * 120) + 135;
 
-            ctx.fillStyle = `rgba(57, ${intensity}, 20, 0.92)`;
+            ctx.fillStyle = `rgba(0, ${intensity}, 255, 0.92)`;
             if (Math.random() > 0.97) {
                 ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
                 ctx.shadowColor = 'rgba(255, 255, 255, 0.4)';
             } else {
-                ctx.shadowColor = 'rgba(57, 255, 20, 0.35)';
+                ctx.shadowColor = 'rgba(0, 243, 255, 0.35)';
             }
 
             ctx.fillText(text, x, y);
@@ -374,9 +374,9 @@ $(document).ready(function () {
 
         let color, title, dotColor;
         if (truthScore < 40) {
-            color = '#FF3B3B'; // Red - High Risk
+            color = '#FF5400'; // Red - High Risk
             title = 'HIGH_RISK_PATTERN';
-            dotColor = '#FF3B3B';
+            dotColor = '#FF5400';
         } else if (truthScore < 65) {
             color = '#FFD700'; // Yellow - Anomaly
             title = 'ANOMALY_DETECTED';
