@@ -1,0 +1,25 @@
+Flask==2.3.3
+Flask-Login==0.6.3
+Flask-Dance==7.0.0
+Flask-Limiter==3.5.0
+Flask-CORS==4.0.0
+Flask-SQLAlchemy==3.0.5
+bcrypt==4.1.2
+PyJWT==2.8.0
+gunicorn==21.2.0; platform_system != "Windows"
+waitress==3.0.0; platform_system == "Windows"
+twilio==8.10.0
+redis==5.0.1
+numpy
+pandas
+scikit-learn
+torch
+torchvision
+opencv-python-headless
+Pillow
+requests
+beautifulsoup4
+nltk
+python-dotenv
+google-generativeai
+reportlab==4.1.0
